@@ -1,0 +1,94 @@
+{
+  "output_file":"coptimeSettings.json",
+  "emote":{
+    "type":"textbox",
+    "value":"Kappa",
+    "label":"emote to check",
+    "tooltip":"the emote from which the time since last usage is checked",
+    "group":"config"
+  },
+  "min_time":{
+    "type":"numberbox",
+    "value":60,
+    "tooltip":"maximum time since last emote usage to have a success",
+    "label":"maximum time for success",
+    "group":"config"
+  },
+  "user_cd":{
+    "type":"numberbox",
+    "value":0,
+    "tooltip":"user specific cooldown on the command",
+    "label":"user Cooldown(secdonds)",
+    "group":"config"
+  },
+  "global_cd":{
+    "type":"numberbox",
+    "value":0,
+    "tooltip":"global cooldown for all users on the command",
+    "label":"global Cooldown(secdonds)",
+    "group":"config"
+  },
+  "reward_global":{
+    "type":"checkbox",
+    "value":true,
+    "tooltip":"check to reward all users on success instead of only the caller",
+    "label":"reward all users?",
+    "group":"costs & rewards"
+  },
+  "cost":{
+    "type":"numberbox",
+    "value":0,
+    "tooltip":"cost on failure of the command",
+    "label":"cost",
+    "group":"costs & rewards"
+  },
+  "reward":{
+    "type":"numberbox",
+    "value":0,
+    "tooltip":"reward on success of the command",
+    "label":"reward",
+    "group":"costs & rewards"
+  },
+  "send_warning":{
+    "type":"checkbox",
+    "value":true,
+    "tooltip":"send a warning if the user has not enough currency points",
+    "label":"send warning",
+    "group":"costs & rewards"
+  },
+  "cop_command":{
+    "type":"textbox",
+    "value":"!coptime",
+    "label":"command name",
+    "tooltip":"the command for the minigame",
+    "group":"command names"
+  },
+  "currency_name":{
+    "type":"textbox",
+    "value":"points",
+    "label":"currency name",
+    "tooltip":"what name do you use for your currency?",
+    "group":"command names"
+  },
+  "success_resp":{
+    "type":"textbox",
+    "value":"{0}, the emote {1} has been used within the last {2} seconds. all users have been rewarded {3} {4}",
+    "label":"success msg",
+    "tooltip":"message to be displayed when emote has been used within specified time",
+    "group":"responses"
+  },
+  "fail_resp":{
+    "type":"textbox",
+    "value":"{0}, the emote {0} has not been used within the last {2} seconds. it cost hem {3} {4}",
+    "label":"fail msg",
+    "tooltip":"message to be displayed when emote has not been used within specified time",
+    "group":"responses"
+  },
+  "warning_resp":{
+    "type":"textbox",
+    "value":"{0} does not have enough {1} to use this command",
+    "label":"warning msg",
+    "tooltip":"message to be shown if user doesn't have enough currency points",
+    "group":"responses"
+  }
+}
